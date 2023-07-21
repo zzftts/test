@@ -12,8 +12,6 @@ Finally, experimental results on the LJSpeech and LibriTTS datasets show that ou
 
 ![arch](images/abc.png)
 
-<br>
-
 <body>
 
 <h1>Ground Truth </h1>
