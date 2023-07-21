@@ -1,5 +1,4 @@
 # <center> Rep2wav: Noise Robust TTS Using self-supervised pre-trained model </center>
-<br>
 ## Abstract
 <div style="text-align: justify"> Benefiting from the development of deep learning, text-to-speech (TTS) technology using clean speech has now achieved significant performance improvements. 
 The data collected from real scenes often contain noise and generally need to be denoised by speech enhancement models.	
@@ -9,9 +8,7 @@ Therefore, we explore methods to improve the noise robustness of TTS models usin
 In this paper, based on the HIFI-GAN model we first propose the representation-to-waveform vocoder, which aims to learn to map the representation of the pre-trained model to the waveform. 
 Second, based on the Fastspeech2 model we propose the text-to-representation Fastspeech2 model, which aims to learn to map text to pre-trained model representations. 
 Finally, experimental results on the LJSpeech and LibriTTS datasets show that our method outperforms using speech enhancement methods in both subjective and objective metrics.
-Audio samples are available	at https://zzftts.github.io/.	
 </div> 
-<br>
 
 ![arch](images/abc.png)
 
@@ -19,7 +16,7 @@ Audio samples are available	at https://zzftts.github.io/.
 
 <body>
 
-<h2>Ground Truth speech</h2>
+<h1>Ground Truth </h1>
 <div align="center">
 <h3>
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/ground_truth/LJ005-0218.wav" controls="controls"></audio> 
@@ -35,9 +32,41 @@ Audio samples are available	at https://zzftts.github.io/.
 </h3>
 </div> 
 
+<h1>Noisy speech </h1>
+<div align="center">
+<h3>
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/noisy/LJ005-0218.wav" controls="controls"></audio> 
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/noisy/LJ007-0143.wav" controls="controls"></audio> 
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/noisy/LJ008-0295.wav" controls="controls"></audio> 
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/noisy/LJ016-0027.wav" controls="controls"></audio> 
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/noisy/LJ019-0057.wav" controls="controls"></audio>
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/noisy/LJ029-0061.wav" controls="controls"></audio> 
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/noisy/LJ033-0170.wav" controls="controls"></audio> 
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/noisy/LJ035-0157.wav" controls="controls"></audio> 
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/noisy/LJ036-0163.wav" controls="controls"></audio> 
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/noisy/LJ040-0175.wav" controls="controls"></audio>
+</h3>
+</div>
+
+<h1>Enhanced speech </h1>
+<div align="center">
+<h3>
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/enhanced/LJ005-0218.wav" controls="controls"></audio> 
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/enhanced/LJ007-0143.wav" controls="controls"></audio> 
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/enhanced/LJ008-0295.wav" controls="controls"></audio> 
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/enhanced/LJ016-0027.wav" controls="controls"></audio> 
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/enhanced/LJ019-0057.wav" controls="controls"></audio>
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/enhanced/LJ029-0061.wav" controls="controls"></audio> 
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/enhanced/LJ033-0170.wav" controls="controls"></audio> 
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/enhanced/LJ035-0157.wav" controls="controls"></audio> 
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/enhanced/LJ036-0163.wav" controls="controls"></audio> 
+    <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/enhanced/LJ040-0175.wav" controls="controls"></audio>
+</h3>
+</div>
 
 <h1>Fastspeech2 (using clean speech)</h1>
 <h2>text2mel2wav (mel)</h2>
+<div align="center">
 <h3>
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/Fastspeech_v2/LJ005-0218.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/Fastspeech_v2/LJ007-0143.wav" controls="controls"></audio> 
@@ -50,6 +79,7 @@ Audio samples are available	at https://zzftts.github.io/.
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/Fastspeech_v2/LJ036-0163.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/Fastspeech_v2/LJ040-0175.wav" controls="controls"></audio>
 </h3>
+</div> 
 
 
 
@@ -57,6 +87,7 @@ Audio samples are available	at https://zzftts.github.io/.
 
 <h1>Fastspeech2 (using enhanced speech)</h1>
 <h2>text2mel2wav (mel)</h2>
+<div align="center">
 <h3>
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_v2_enh/LJ005-0218.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_v2_enh/LJ007-0143.wav" controls="controls"></audio> 
@@ -69,9 +100,11 @@ Audio samples are available	at https://zzftts.github.io/.
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_v2_enh/LJ036-0163.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_v2_enh/LJ040-0175.wav" controls="controls"></audio>
 </h3>
+</div> 
 
 
 <h2>text2representation2wav (layer0)</h2>
+<div align="center">
 <h3>
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer0/LJ005-0218.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer0/LJ007-0143.wav" controls="controls"></audio> 
@@ -84,9 +117,11 @@ Audio samples are available	at https://zzftts.github.io/.
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer0/LJ036-0163.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer0/LJ040-0175.wav" controls="controls"></audio>
 </h3>
+</div> 
 
 
 <h2>text2representation2wav (layer1)</h2>
+<div align="center">
 <h3>
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer1/LJ005-0218.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer1/LJ007-0143.wav" controls="controls"></audio> 
@@ -99,9 +134,11 @@ Audio samples are available	at https://zzftts.github.io/.
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer1/LJ036-0163.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer1/LJ040-0175.wav" controls="controls"></audio>
 </h3>
+</div> 
 
 
 <h2>text2representation2wav (layer3)</h2>
+<div align="center">
 <h3>
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer3/LJ005-0218.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer3/LJ007-0143.wav" controls="controls"></audio> 
@@ -114,9 +151,10 @@ Audio samples are available	at https://zzftts.github.io/.
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer3/LJ036-0163.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer3/LJ040-0175.wav" controls="controls"></audio>
 </h3>
-
+</div> 
 
 <h2>text2representation2wav (layer5)</h2>
+<div align="center">
 <h3>
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer5/LJ005-0218.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer5/LJ007-0143.wav" controls="controls"></audio> 
@@ -129,8 +167,10 @@ Audio samples are available	at https://zzftts.github.io/.
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer5/LJ036-0163.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer5/LJ040-0175.wav" controls="controls"></audio>
 </h3>
+</div> 
 
 <h2>text2representation2wav (layer12)</h2>
+<div align="center">
 <h3>
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer12/LJ005-0218.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer12/LJ007-0143.wav" controls="controls"></audio> 
@@ -143,8 +183,10 @@ Audio samples are available	at https://zzftts.github.io/.
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer12/LJ036-0163.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer12/LJ040-0175.wav" controls="controls"></audio>
 </h3>
+</div> 
 
 <h2>text2representation2wav (layer weighted sum)</h2>
+<div align="center">
 <h3>
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer_weightsum/LJ005-0218.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer_weightsum/LJ007-0143.wav" controls="controls"></audio> 
@@ -157,4 +199,5 @@ Audio samples are available	at https://zzftts.github.io/.
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer_weightsum/LJ036-0163.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer_weightsum/LJ040-0175.wav" controls="controls"></audio>
 </h3>
+</div> 
 
