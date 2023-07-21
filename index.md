@@ -9,6 +9,6 @@ Experimental results prove that the proposed expressive TTS model in this paper 
 
 <br>
 
-![arch](images/duriane.png)
+![arch](images/abc.png)
 
 <br>
