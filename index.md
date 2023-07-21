@@ -10,8 +10,7 @@ In this paper, based on the HIFI-GAN model we first propose the representation-t
 Second, based on the Fastspeech2 model we propose the text-to-representation Fastspeech2 model, which aims to learn to map text to pre-trained model representations. 
 Finally, experimental results on the LJSpeech and LibriTTS datasets show that our method outperforms using speech enhancement methods in both subjective and objective metrics.
 Audio samples are available	at https://zzftts.github.io/.	
- </div> 
-
+</div> 
 <br>
 
 ![arch](images/abc.png)
