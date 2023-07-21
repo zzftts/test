@@ -18,8 +18,9 @@ Audio samples are available	at https://zzftts.github.io/.
 <br>
 
 <body>
-<style>  body{text-align:center} </style>
+
 <h2>Ground Truth speech</h2>
+<div align="center">
 <h3>
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/ground_truth/LJ005-0218.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/ground_truth/LJ007-0143.wav" controls="controls"></audio> 
@@ -32,7 +33,7 @@ Audio samples are available	at https://zzftts.github.io/.
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/ground_truth/LJ036-0163.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/ground_truth/LJ040-0175.wav" controls="controls"></audio>
 </h3>
-
+</div> 
 
 
 <h1>Fastspeech2 (using clean speech)</h1>
@@ -156,4 +157,4 @@ Audio samples are available	at https://zzftts.github.io/.
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer_weightsum/LJ036-0163.wav" controls="controls"></audio> 
     <audio src="https://github.com/zzftts/zzftts.github.io/raw/main/FastSpeech2_repre3_enh_layer_weightsum/LJ040-0175.wav" controls="controls"></audio>
 </h3>
-</body>
+
